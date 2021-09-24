@@ -1,12 +1,14 @@
 import React from "react";
 import Card from './Card';
 import contacts from '../contacts';
+import Avatar from './Avatar';
 
 // You can see alternative methods to pass props arguments
 function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
+      <Avatar imgURL="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/aIqsmC5ZFVGLq9L1afa0P6SW8YI=/1440x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/26GA5K534RGWC7VWVLDMURHBLI.jpg" />
       <Card {...contacts[0]} />
       <Card {...contacts[1]} />
       <Card {...contacts[2]} />
